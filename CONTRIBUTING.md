@@ -114,10 +114,9 @@ This is just to help you organize your process
 
 - [ ] Did I cut my work branch off of master (didn't cut new branches from existing feature brances)?
 - [ ] Did I follow the correct naming convention for my branch?
-- [ ] Is my branch focused on a single main change?
-  - [ ] Do all of my changes directly relate to this change?
-- [ ] Did I merge the upstream master branch after I finished all my
-  work?
+- [ ] Is my branch focused on a single feature?
+  - [ ] Do all of my commits directly relate to this feature?
+- [ ] Did I update my branch with master's changes?
 - [ ] Did I write a clear pull request message detailing what changes I made?
 - [ ] Did I get a code review?
   - [ ] Did I make any requested changes from that code review?
