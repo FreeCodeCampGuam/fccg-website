@@ -2,19 +2,21 @@
 
 ## General Workflow
 
+Note: Upstream is the repo you forked from, while origin is your fork that has been cloned to your machine.
 1. Fork the repo
-1. Cut a namespaced feature branch from master
-1. Make commits to your feature branch. Prefix each commit like so:
-1. When you've finished with your fix or feature, merge upstream changes into your branch. submit a pull request directly to master. Include a description of your changes.
+1. Clone your fork of the repo
+1. Cut a namespaced feature branch from origin master
+1. Make commits to your feature branch.
+1. When you're finished with your fix or feature, pull upstream changes into your branch. submit a pull request directly to upstream master. Include a description of your changes.
 1. Your pull request will be reviewed by another maintainer. The point of code reviews is to help keep the codebase clean and of high quality and, equally as important, to help you grow as a programmer. If your code reviewer requests you make a change you don't understand, ask them why.
-1. Fix any issues raised by your code reviwer, and push your fixes as a single new commit.
+1. Fix any issues raised by your code reviwer, and push your fixes.
 1. Once the pull request has been reviewed, it will be merged by another member of the team. Do not merge your own commits.
 
 ## Detailed Workflow
 
-### Fork the repo
+### Fork the repo and clone your fork to your machine
 
-Use github’s interface to make a fork of the repo, then add that repo as an upstream remote:
+Use github’s interface to make a fork of the main repo, clone the fork to your machine, and add the main repo as an upstream remote with this terminal command:
 
 ```
 git remote add upstream https://github.com/FreeCodeCampGuam/fccg-website.git
@@ -23,13 +25,13 @@ git remote add upstream https://github.com/FreeCodeCampGuam/fccg-website.git
 ### Cut a namespaced feature branch from master
 
 Your branch should follow this naming convention:
-  - bug/...
-  - feat/...
+  - bug/improper-API-endpoint
+  - feat/login
+  - refactor/callback-style-to-promises
+  - doc/readme
   - test/...
-  - doc/...
-  - refactor/...
 
-These commands will help you do this:
+This command will help you do this:
 
 ``` bash
 # Creates your branch and brings you there
@@ -39,12 +41,11 @@ git checkout -b `your-branch-name`
 ### Make commits to your feature branch. 
 
 Prefix each commit like so
-  - (feat) Added a new feature
-  - (fix) Fixed inconsistent tests [Fixes #0]
+  - (feat) Add a new feature
+  - (fix) Fix inconsistent tests [Fixes #0]
   - (refactor) ...
-  - (cleanup) ...
-  - (test) ...
   - (doc) ...
+  - (test) ...
 
 Make changes and commits on your branch, and make sure that you
 only make changes that are relevant to this branch. If you find
@@ -76,7 +77,7 @@ through the merging process. Git will pause merging to allow you to sort
 out the conflicts. You do this
 by checking all of the files git says have been changed in both histories
 and picking the versions you want. Be aware that these changes will show
-up in your pull request, so try and incorporate upstream changes as much
+up in your pull request, so try and incorporate upstream changes as often
 as possible.
 
 ### Make a pull request
@@ -89,7 +90,7 @@ your changes incorporated into this repo.
 At least one other person MUST give your changes a code review, and once
 they are satisfied they will merge your changes into upstream. Alternatively,
 they may have some requested changes. You should make more commits to your
-branch to fix these, then follow this process again from rebasing onwards.
+branch to fix these, then follow this process again.
 
 Once you get back here, make a comment requesting further review and
 someone will look at your code again. If they like it, it will get merged,
@@ -111,7 +112,7 @@ Thanks for contributing!
 
 This is just to help you organize your process
 
-- [ ] Did I cut my work branch off of master (don't cut new branches from existing feature brances)?
+- [ ] Did I cut my work branch off of master (didn't cut new branches from existing feature brances)?
 - [ ] Did I follow the correct naming convention for my branch?
 - [ ] Is my branch focused on a single main change?
   - [ ] Do all of my changes directly relate to this change?
