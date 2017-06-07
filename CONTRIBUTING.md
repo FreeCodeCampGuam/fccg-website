@@ -2,25 +2,18 @@
 
 ## General Workflow
 
-Note: Upstream is the repo you forked from, while origin is your fork that has been cloned to your machine.
-1. Fork the repo
-1. Clone your fork of the repo
-1. Cut a namespaced feature branch from origin master
+1. Clone the repo.
+1. Cut a namespaced feature branch from origin master.
 1. Make commits to your feature branch.
-1. When you're finished with your fix or feature, pull upstream changes into your branch. submit a pull request directly to upstream master. Include a description of your changes.
+1. Pull Request
+    - If you want to start a conversation about the feature   you're working on, submit a pull request to origin   master with [WIP]  prefixed.
+    - If you want to submit a pull request to merge your feature branch's code into master, make sure you've updated your feature branch by merging master's changes.
+    - Include a description of your changes.
 1. Your pull request will be reviewed by another maintainer. The point of code reviews is to help keep the codebase clean and of high quality and, equally as important, to help you grow as a programmer. If your code reviewer requests you make a change you don't understand, ask them why.
 1. Fix any issues raised by your code reviwer, and push your fixes.
 1. Once the pull request has been reviewed, it will be merged by another member of the team. Do not merge your own commits.
 
 ## Detailed Workflow
-
-### Fork the repo and clone your fork to your machine
-
-Use github’s interface to make a fork of the main repo, clone the fork to your machine, and add the main repo as an upstream remote with this terminal command:
-
-```
-git remote add upstream https://github.com/FreeCodeCampGuam/fccg-website.git
-```
 
 ### Cut a namespaced feature branch from master
 
@@ -61,12 +54,12 @@ changes.
 ### Merge upstream changes into your branch
 
 Once you are done making changes, you can begin the process of getting
-your code merged into the main repo. Step 1 is to merge upstream
+your code merged into the main repo. Step 1 is to merge
 changes to the master branch into yours by running this command
 from your branch:
 
 ```bash
-git pull upstream master
+git pull origin master
 ```
 
 This will start the merge process. You must commit all of your changes
