@@ -41,7 +41,7 @@ git checkout -b `your-branch-name`
 ### Make commits to your feature branch. 
 
 Prefix each commit like so
-  - (feat) Add a new feature
+  - (feat) Store user's login session to conditionally render Login Component on next visit
   - (fix) Fix inconsistent tests [Fixes #0]
   - (refactor) ...
   - (doc) ...
