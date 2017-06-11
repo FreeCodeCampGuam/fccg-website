@@ -6,8 +6,8 @@
 1. Cut a namespaced feature branch from origin master.
 1. Make commits to your feature branch.
 1. Pull Request
-    - If you want to start a conversation about the feature   you're working on, submit a "work in progress" pull request to origin   master with [WIP]  prefixed.
-    - If you want to submit a pull request to merge your feature branch's code into master, make sure you've updated your feature branch by merging master's changes.
+    - If you want to start a conversation about the feature you're working on, submit a pull request to origin master with [WIP]  prefixed.
+    - If you want to submit a pull request to merge your feature branch's code into master, first make sure your feature branch is up-to-date by merging master's changes into yours.
     - Include a description of your changes.
 1. Your pull request will be reviewed by another maintainer. The point of code reviews is to help keep the codebase clean and of high quality and, equally as important, to help you grow as a programmer. If your code reviewer requests you make a change you don't understand, ask them why.
 1. Fix any issues raised by your code reviwer, and push your fixes.
