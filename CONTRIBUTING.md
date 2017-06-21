@@ -17,13 +17,6 @@
 
 ### Cut a namespaced feature branch from master
 
-Your branch should follow this naming convention:
-  - bug/improper-API-endpoint
-  - feat/login
-  - refactor/callback-style-to-promises
-  - doc/readme
-  - test/...
-
 This command will help you do this:
 
 ``` bash
@@ -32,13 +25,6 @@ git checkout -b `your-branch-name`
 ```
 
 ### Make commits to your feature branch. 
-
-Prefix each commit like so
-  - (feat) Store user's login session to conditionally render Login Component on next visit
-  - (fix) Fix inconsistent tests [Fixes #0]
-  - (refactor) ...
-  - (doc) ...
-  - (test) ...
 
 Make changes and commits on your branch, and make sure that you
 only make changes that are relevant to this branch. If you find
