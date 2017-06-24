@@ -4,10 +4,10 @@ import './Navbar.css';
 const Navbar = () => (
   <div id="navbar">
     <ul>
-      <li><a href="#Events">Events</a></li>
-      <li><a href="#Meetups">Meetups</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#meetups">Meetups</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#Contact">Contact</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 );
