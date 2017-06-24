@@ -1,0 +1,36 @@
+#navbar {
+  background-color: black;
+  height: auto;
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+}
+
+#navbar ul {
+  padding: 0;
+  margin: 0.2rem;
+}
+
+#navbar li {
+  display: inline-block;
+  padding: 1.5rem 0;
+}
+
+#navbar li a {
+  color: white;
+  padding: 1.5rem;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 440px) {
+  #navbar li a {
+    padding: 1.2rem;
+  }
+}
+
+@media screen and (max-device-width: 560px) {
+  #navbar li a {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+  }
+}
